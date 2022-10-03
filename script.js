@@ -37,8 +37,8 @@ var getDistanceHint = function(distance){ //Функция для вывода �
     }
 };
 
-var width = 400;
-var height = 400;
+var width = 800;
+var height = 800;
 var clicks = 0;
 var lim= 50;
 
@@ -72,7 +72,7 @@ $("#map").click(function(event){ //Обработчик события, клик
 
     $("#distance").text(distanceHint); //Если distance будет меньше 8, то будет выведено сообщение о победе
 
-    if (distance < 8){ 
+    if (distance < 12){ 
         alert("Клад найден! Сделано кликов " + clicks);
         location.reload();
     }
